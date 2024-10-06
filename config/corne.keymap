@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE      &kp N1        &kp N2  &kp N3   &kp N4  &kp N5       &kp N6     &kp N7    &kp N8    &kp N9     &kp N0   &kp BSPC
-&bt BT_CLR_ALL  &bt BT_SEL 0  &trans  &none    &none   &none        &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans   &trans
-&kp LSHFT       &trans        &trans  &trans   &trans  &trans       &trans     &trans    &trans    &trans     &kp DOT  &trans
-                                      &kp TAB  &trans  &kp ENTER    &kp SPACE  &trans    &kp RALT
+&kp ESCAPE        &kp N1  &kp N2  &kp N3   &kp N4  &kp N5       &kp N6     &kp N7    &kp N8    &kp N9     &kp N0   &kp BSPC
+&kp LEFT_CONTROL  &trans  &trans  &none    &none   &none        &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans   &trans
+&kp LSHFT         &trans  &trans  &trans   &trans  &trans       &trans     &trans    &trans    &trans     &kp DOT  &trans
+                                  &kp TAB  &trans  &kp ENTER    &kp SPACE  &mo 3     &kp RALT
             >;
         };
 
@@ -53,7 +53,7 @@
 &kp ESCAPE  &kp EXCL  &kp AT  &kp HASH   &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS              &kp ASTRK              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSPC
 &kp LCTRL   &trans    &trans  &kp EQUAL  &kp TILDE  &trans       &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &kp UNDERSCORE     &kp GRAVE
 &kp LSHFT   &trans    &trans  &trans     &trans     &trans       &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE          &trans             &kp RIGHT_SHIFT
-                              &kp TAB    &trans     &kp ENTER    &kp SPACE  &trans                &kp RALT
+                              &kp TAB    &mo 3      &kp ENTER    &kp SPACE  &trans                &kp RALT
             >;
         };
 
