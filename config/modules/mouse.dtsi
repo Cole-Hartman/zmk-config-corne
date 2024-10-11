@@ -10,10 +10,8 @@
 };
 
 &msc {
-  acceleration-exponent = <1>;  // Slight acceleration
+  acceleration-exponent = <0>;
   delay-ms = <0>;
-  time-to-max-speed-ms = <500>; // Reach max speed in 500ms
-  tap-ms = <5>;                 // Tap time of 5ms
 };
 
 /* #define M_MOVE_LEFT  &mmv MOVE_LEFT */
