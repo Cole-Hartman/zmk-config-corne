@@ -43,12 +43,15 @@
 
         layer_3 {
             bindings = <
-&kp K_SLEEP          &none                &none         &none          &mmv MOVE_UP   &none           &none  &none      &none            &none          &none         &kp C_SNAPSHOT
-&kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &none         &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_RIGHT &none  &mkp LCLK  &mkp RCLK        &msc SCRL_DOWN &msc SCRL_UP  &none
-&bt BT_CLR           &bt BT_SEL 0         &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &none  &none      &none            &none          &none         &none
+&kp K_SLEEP          &none                &none          &mmv MOVE_UP   &none           &none &none  &none      &none     &none          &none         &kp C_SNAPSHOT
+&kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none  &mkp LCLK  &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP  &none
+&bt BT_CLR           &bt BT_SEL 0         &bt BT_SEL 1   &none          &none           &none &none  &none      &none     &none          &none         &none
                                             &none          &none          &none           &none  &none                 &none
             >;
         };
     };
 };
+
+
+
 
