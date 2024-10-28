@@ -26,7 +26,7 @@
         lower_layer {
             bindings = <
 &kp ESCAPE &kp N1 &kp N2           &kp N3            &kp N4          &kp N5 &kp N6         &kp N7    &kp N8    &kp N9       &kp N0  &kp BSPC
-&kp LCTRL  &none  &kp K_MUTE       &kp K_VOLUME_DOWN &kp K_VOLUME_UP &none  &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT    &none   &none
+&kp LCTRL  &mo 4  &kp K_MUTE       &kp K_VOLUME_DOWN &kp K_VOLUME_UP &none  &kp LEFT       &kp DOWN  &kp UP    &kp RIGHT    &none   &none
 &kp LSHFT  &none  &kp C_PLAY_PAUSE &kp K_BACK        &kp K_NEXT      &none  &msc SCRL_DOWN &mkp LCLK &mkp RCLK &msc SCRL_UP &kp DOT &none
                                       &kp TAB         &trans           &kp ENTER    &kp SPACE  &mo 3     &kp RALT
             >;
@@ -43,12 +43,21 @@
 
         layer_3 {
             bindings = <
-&kp K_SLEEP          &none                &none          &mmv MOVE_UP   &none           &none &none  &none      &none     &none          &none         &kp C_SNAPSHOT
+&kp K_SLEEP          &none                &none          &mmv MOVE_UP   &none           &none &none  &none      &none     &none          &none         &none
 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none  &mkp LCLK  &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP  &none
 &bt BT_CLR           &bt BT_SEL 0         &bt BT_SEL 1   &none          &none           &none &none  &none      &none     &none          &none         &none
                                             &none          &none          &none           &none  &none                 &none
             >;
         };
+
+        layer_4 {
+            bindings = <
+&none                &none                &none          &mmv MOVE_UP   &none           &none &none  &none      &none     &none          &none         &none
+&none                &kp C_BRIGHTNESS_INC &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none  &mkp LCLK  &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP  &none
+&none                &none                &none   &none          &none           &none &none  &none      &none     &none          &none         &none
+                                            &none          &none          &none           &none  &none                 &none
+            >;
+        }
     };
 };
 
