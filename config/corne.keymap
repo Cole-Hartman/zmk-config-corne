@@ -20,8 +20,8 @@
         // mouse
         layer_1 {
             bindings = <
-&kp ESCAPE &none  &none          &mmv MOVE_UP   &none           &none     &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT    &none   &kp BSPC
-&mo 4      &mo 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &mkp LCLK &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP &none   &none
+&kp ESCAPE &none  &none          &mmv MOVE_UP   &none           &none     &none     &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT      &kp BSPC
+&mo 3      &mo 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &none     &mkp LCLK &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP   &none
 &none      &none  &none          &none          &none           &none     &none     &none     &none          &none        &none   &none
                                  &kp TAB        &trans          &kp ENTER &kp SPACE &mo 3     &kp RALT
             >;
@@ -50,10 +50,10 @@
         // numbers
         layer_4 {
             bindings = <
-&none &none &none &none &none   &none &none  &kp N1  &kp N2 &kp N3 &none  &kp BSPC
-&none &none &none &none &kp DOT &none &none  &kp N4  &kp N5 &kp N6 &kp N0 &none
-&none &none &none &none &none   &none &none  &kp N7  &kp N8 &kp N9 &none  &none
-                  &none &none   &none &none  &none   &none
+&none &none &none &none &none &none &none  &kp N1  &kp N2 &kp N3 &kp DOT &kp BSPC
+&none &none &none &none &none &none &none  &kp N4  &kp N5 &kp N6 &kp N0  &none
+&none &none &none &none &none &none &none  &kp N7  &kp N8 &kp N9 &none   &none
+                  &none &none &none &none  &none   &none
             >;
         };
 
