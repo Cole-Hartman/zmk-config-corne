@@ -21,7 +21,7 @@
         layer_1 {
             bindings = <
 &kp ESCAPE &none  &none          &mmv MOVE_UP   &none           &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT      &none        &kp BSPC
-&none      &mo 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &none     &mkp LCLK &mkp RCLK &mwh SCROLL_DOWN &mwh SCROLL_UP &none
+&none      &mo 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &none     &mkp LCLK &mkp RCLK &mwh SCRL_DOWN &mwh SCRL_UP &none
 &none      &none  &none          &none          &none           &none     &none     &none     &none     &none          &none        &none
                                  &kp TAB        &trans          &kp ENTER &kp SPACE &mo 3     &kp RALT
             >;
