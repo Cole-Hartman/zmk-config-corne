@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: urob
       url-base: https://github.com/urob
-    - name: mctechnology17 # new
-      url-base: https://github.com/mctechnology17 # new
+    - name: m165437 #new entry
+      url-base: https://github.com/M165437 #new entry
   projects:
     - name: zmk
       remote: urob
@@ -12,8 +12,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-    - name: zmk-nice-oled # new
-      remote: mctechnology17 # new
-      revision: main # new
+    - name: nice-view-gem #new entry
+      remote: m165437 #new entry
+      revision: main #new entry
   self:
     path: config
