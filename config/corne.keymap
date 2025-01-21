@@ -32,7 +32,7 @@
             bindings = <
 &kp ESCAPE &kp EXCL &kp AT &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS             &kp ASTRK             &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BSPC
 &kp LCTRL  &none    &none  &kp EQUAL &kp TILDE &kp PLUS  &kp MINUS &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp BACKSLASH    &kp UNDERSCORE    &kp GRAVE
-&kp LSHFT  &none    &none  &none     &none     &none     &none     &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp PIPE         &none             &kp RIGHT_SHIFT
+&kp LSHFT  &none    &none  &none     &none     &none     &none     &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp PIPE         &kp FSLH          &kp RIGHT_SHIFT
                            &kp TAB   &mo 3     &kp ENTER &kp SPACE &trans               &kp RALT
             >;
         }; 
@@ -40,20 +40,20 @@
         // bluetooth, volume, brightness, etc.
         layer_3 {
             bindings = <
-&kp K_SLEEP &none        &none        &none         &none        &none      &none  &kp C_BRIGHTNESS_DEC  &none            &kp C_BRIGHTNESS_INC &none &none
-&none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR &none  &kp K_VOLUME_DOWN     &kp K_MUTE       &kp K_VOLUME_UP      &none &none
-&none       &none        &none        &none         &none        &none      &none  &kp K_BACK            &kp C_PLAY_PAUSE &kp K_NEXT           &none &none
-                                      &none         &none        &none      &none  &none                 &none
+&none &none        &none        &none         &none        &none      &none  &kp C_BRIGHTNESS_DEC  &none            &kp C_BRIGHTNESS_INC &none &none
+&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR &none  &kp K_VOLUME_DOWN     &kp K_MUTE       &kp K_VOLUME_UP      &none &none
+&none &none        &none        &none         &none        &none      &none  &kp K_PREV            &kp C_PLAY_PAUSE &kp K_NEXT           &none &none
+                                &none         &none        &none      &none  &none                 &none
             >;
         };
 
         // numbers
         layer_4 {
             bindings = <
-&none &none &none &none &none &none    &none     &kp N1  &kp N2 &kp N3 &none    &kp BSPC
-&none &none &none &none &none &kp PLUS &kp MINUS &kp N4  &kp N5 &kp N6 &kp N0   &none
-&none &none &none &none &none &none    &none     &kp N7  &kp N8 &kp N9 &kp FSLH &none
-                  &none &none &none    &kp SPACE &kp DOT &none
+&none &none &none &none     &none &none    &none     &kp N1  &kp N2 &kp N3 &none    &kp BSPC
+&none &none &none &kp EQUAL &none &kp PLUS &kp MINUS &kp N4  &kp N5 &kp N6 &kp N0   &none
+&none &none &none &none     &none &none    &none     &kp N7  &kp N8 &kp N9 &kp FSLH &none
+                  &none     &none &none    &kp SPACE &kp DOT &none
             >;
         };
 
