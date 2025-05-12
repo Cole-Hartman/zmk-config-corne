@@ -20,7 +20,7 @@
         // mouse
         layer_1 {
             bindings = <
-&kp ESCAPE &none  &none          &mmv MOVE_UP   &none           &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT      &none        &kp BSPC
+&mo 5      &none  &none          &mmv MOVE_UP   &none           &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT      &none        &kp BSPC
 &none      &mo 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &none     &mkp LCLK &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP &none
 &none      &none  &none          &none          &none           &none     &none     &none     &none     &none          &none        &none
                                  &kp TAB        &trans          &kp ENTER &kp SPACE &mo 3     &kp RALT
@@ -37,17 +37,17 @@
             >;
         }; 
 
-        // bluetooth, volume, brightness, etc.
+        // utils 
         layer_3 {
             bindings = <
-&none &none        &none        &none         &none        &none      &none  &kp C_BRIGHTNESS_DEC  &none            &kp C_BRIGHTNESS_INC &kp INS &none
-&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR &none  &kp K_VOLUME_DOWN     &kp K_MUTE       &kp K_VOLUME_UP      &none   &none
-&none &none        &none        &none         &none        &none      &none  &kp K_PREV            &kp C_PLAY_PAUSE &kp K_NEXT           &none   &none
-                                &none         &none        &none      &none  &none                 &none
+&none &none &none &none &none &none &none &kp C_BRIGHTNESS_DEC &none            &kp C_BRIGHTNESS_INC &kp INS &none
+&none &none &none &none &none &none &none &kp K_VOLUME_DOWN    &kp K_MUTE       &kp K_VOLUME_UP      &none   &none
+&none &none &none &none &none &none &none &kp K_PREV           &kp C_PLAY_PAUSE &kp K_NEXT           &none   &none
+                  &none &none &none &none &none                &none
             >;
         };
 
-        // numbers
+        // number pad
         layer_4 {
             bindings = <
 &none &none &none &none     &none &none    &none     &kp N1  &kp N2 &kp N3 &none    &kp BSPC
@@ -56,6 +56,19 @@
                   &none     &none &none    &kp SPACE &kp DOT &none
             >;
         };
+
+
+	// profile
+        layer_5 {
+            bindings = <
+&none &none        &none        &none        &none        &none      &none &none &none &none &none &none
+&none &none 	   &none        &none        &none        &none      &none &none &none &none &none &none
+&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none &none &none &none &none &none
+&none &none        &none        &none        &none        &none      &none &none &none &none &none &none
+                   &none        &none        &none        &none      &none &none
+            >;
+        };
+
 
     };
 };
