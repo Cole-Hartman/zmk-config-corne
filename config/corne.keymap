@@ -22,7 +22,7 @@
 &mo 5      &none  &none  &none  &none           &none     &none     &none     &none     &none         &none      &kp BSPC
 &none      &mo 4  &none  &none  &kp LALT        &none     &none     &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &none
 &none      &none  &none  &none  &none           &none     &none     &none     &none     &none         &none      &none
-                                &kp none        &none     &kp ENTER &kp SPACE &mo 3     &none
+                                &none           &none     &kp ENTER &kp SPACE &mo 3     &none
             >;
         };
         
