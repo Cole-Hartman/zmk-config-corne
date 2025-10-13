@@ -10,20 +10,20 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E    &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LGUI    &kp A  &kp S  &kp D    &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C    &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                          &kp TAB  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp RALT
+&kp ESCAPE  &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LGUI    &kp A  &kp S  &kp D    &kp F      &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C    &kp V      &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                          &mp 1    &kp LCTRL  &kp RET    &kp SPACE  &mo 2  &kp TAB
             >;
         };
 
-        // mouse
+        // misc 
         layer_1 {
             bindings = <
-&mo 5      &none  &none          &mmv MOVE_UP   &none           &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT      &none        &kp BSPC
-&none      &mo 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &none     &mkp LCLK &mkp RCLK &msc SCRL_DOWN &msc SCRL_UP &none
-&none      &none  &none          &none          &none           &none     &none     &none     &none     &none          &none        &none
-                                 &kp TAB        &trans          &kp ENTER &kp SPACE &mo 3     &kp RALT
+&mo 5      &none  &none  &mmv none  &none           &none     &none     &none     &none     &none         &none      &none        &kp BSPC
+&none      &mo 4  &none  &mmv none  &LALT           &none     &none     &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &none
+&none      &none  &none  &none      &none           &none     &none     &none     &none     &none         &none      &none
+                                    &kp none        &none    &kp ENTER &kp SPACE &mo 3     &none
             >;
         };
         
@@ -58,7 +58,7 @@
         };
 
 	// profile
-        layer_5 {
+        layer_6 {
             bindings = <
 &none &none 	   &none        &none        &none        &none      &none &none &none &none &none &none
 &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none &none &none &none &none &none
